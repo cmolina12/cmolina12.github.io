@@ -4,7 +4,9 @@ const roles = [
     'an Industrial Engineer',
     'a Systems and Computing Engineer',
     'passionate about Optimization',
-    'a Problem Solver'
+  'interested in Privacy & Cybersecurity',
+    'focused on Digital Autonomy',
+      'keen to solve problems through Optimization',
 ]
 
 let currentRole = 0;
