@@ -110,3 +110,33 @@ main a:hover {
   margin: 0 auto;
   text-align: left;
 }
+
+#projects p {
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+#projects h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color:rgb(239, 65, 45)
+}
+
+.projects-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.github-link {
+  color: #212529;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.github-link:hover {
+  color: #ef412d;
+  text-decoration: underline;
+}
