@@ -1,12 +1,11 @@
 
 const roles = [
 
-    'an Industrial Engineer',
-    'a Systems and Computing Engineer',
-    'passionate about Optimization',
-  'interested in Privacy & Cybersecurity',
-    'focused on Digital Autonomy',
-      'keen to solve problems through Optimization',
+    'Industrial Engineering',
+    'Systems and Computing Engineering',
+    'Optimization',
+  'Privacy & Cybersecurity',
+    'Digital Autonomy',
 ]
 
 let currentRole = 0;
