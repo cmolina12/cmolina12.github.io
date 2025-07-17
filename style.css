@@ -175,6 +175,8 @@ body nav a {
   background: none;
   border: none;
   transition: color 0.2s;
+  padding: 0.5rem 1rem;    /* Increase padding */
+  font-size: 1.2rem;       /* Increase icon size */
 }
 
 
