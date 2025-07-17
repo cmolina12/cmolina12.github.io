@@ -3,9 +3,9 @@ const roles = [
 
     'Industrial Engineering',
     'Systems and Computing Engineering',
+    'Full Stack Developer',
     'Optimization',
-  'Privacy & Cybersecurity',
-    'Digital Autonomy',
+  'Privacy & Digital Autonomy',
 ]
 
 let currentRole = 0;

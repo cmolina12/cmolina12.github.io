@@ -140,3 +140,108 @@ main a:hover {
   color: #ef412d;
   text-decoration: underline;
 }
+
+
+.profile-img-shadow {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(239,65,45,0.10);
+
+}
+
+.flowplan-badge {
+  color: #23577a;
+}
+
+.obsidian-badge {
+  color: #483699;
+}
+
+body nav a {
+  color: #212529; /* dark gray */
+}
+
+.bi-github,
+.bi-linkedin {
+  color: #212529; /* black/dark gray */
+  transition: color 0.2s;
+}
+
+.github-link:hover .bi-github,
+.linkedin-link:hover .bi-linkedin {
+  color: #fff; /* white on hover */
+}
+
+.dark-toggle-btn {
+  color: #212529; /* black in light mode */
+  background: none;
+  border: none;
+  transition: color 0.2s;
+}
+
+
+.dark-toggle-btn:hover {
+  background: none !important;
+  color: inherit !important;
+  border: none !important;
+}
+
+/* DARK MODE: toggled by .dark-mode on <body> */
+
+body.dark-mode nav a {
+  color: #fff !important;
+}
+
+body.dark-mode nav a:hover {
+  color: rgb(239, 65, 45) !important;
+}
+
+body.dark-mode .dark-toggle-btn {
+  color: #f8f9fa; /* white in dark mode */
+}
+body.dark-mode {
+  background-color: #181a20;
+  color: #f8f9fa;
+}
+
+body.dark-mode main a {
+  border: 1px solid #f8f9fa;
+  color: #f8f9fa;
+  background: transparent;
+}
+body.dark-mode main a:hover {
+  background-color: #f8f9fa;
+  color: #181a20;
+}
+
+body.dark-mode #about,
+body.dark-mode #education,
+body.dark-mode #projects {
+  background: #23262f !important;
+  color: #f8f9fa;
+}
+
+body.dark-mode #about h2,
+body.dark-mode #education h2,
+body.dark-mode #projects h2 {
+  color: #f8f9fa;
+}
+
+body.dark-mode .github-link {
+  color: #f8f9fa;
+}
+body.dark-mode .github-link:hover {
+  color: rgb(239, 65, 45);
+}
+
+body.dark-mode .profile-img-shadow {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5), 0 1.5px 6px rgba(255,173,96,0.10);
+}
+
+body.dark-mode .bi-github,
+body.dark-mode .bi-linkedin {
+  color: #f8f9fa; /* light color for icons in dark mode */
+}
+
+body.dark-mode .github-link:hover .bi-github,
+body.dark-mode .linkedin-link:hover .bi-linkedin {
+  color: rgb(239, 65, 45); /* accent color on hover */
+}

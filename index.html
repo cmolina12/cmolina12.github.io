@@ -22,21 +22,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="d-flex justify-content-between align-items-center px-4 py-3">
-      <div class="fw-bold fs-5">Camilo Molina</div>
-      <nav class="d-flex gap-4">
-        <a href="#about" class="text-decoration-none text-dark fw-normal"
-          >About</a
+    <header
+      class="d-flex justify-content-between align-items-center px-4 py-3"
+      style="background: transparent"
+    >
+      <div class="d-flex align-items-center">
+        <button
+          onclick="toggleDarkMode()"
+          class="btn btn-sm btn-outline ms-3 dark-toggle-btn"
+          style="background: none; border: none"
         >
-        <a href="#education" class="text-decoration-none text-dark">Education</a>
-        <a href="#projects" class="text-decoration-none text-dark">Projects</a>
+          <i class="bi bi-moon"></i>
+        </button>
+        <span class="fw-bold fs-5 ms-2" style="color: inherit"
+          >Camilo Molina</span
+        >
+      </div>
+      <nav class="d-flex gap-4" aria-label="Main navigation">
+        <a href="#about" class="text-decoration-none fw-normal">About</a>
+        <a href="#education" class="text-decoration-none">Education</a>
+        <a href="#projects" class="text-decoration-none">Projects</a>
       </nav>
     </header>
 
-    <main>
-      <p>Hi, my name is</p>
+    <main
+      class="d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 60vh"
+    >
+      <img
+        src="assets/images/profile.jpg"
+        alt="Camilo Molina"
+        class="rounded-circle mb-3 profile-img-shadow"
+        width="128"
+        height="128"
+        style="object-fit: cover"
+      />
+
       <h1>Camilo Molina</h1>
-      <p><span id="typewriter"></span><span class="cursor">|</span></p>
+      <p><span id="typewriter"></span><span class="cursor mb-4">|</span></p>
       <a href="mailto:contact@camilomolina.dev">Get in Touch</a>
     </main>
 
@@ -129,7 +152,7 @@
         <!-- Flowplan Project Block -->
         <div
           class="d-flex flex-column flex-md-row align-items-start p-4 rounded"
-          style="background-color: #0b2c3e; color: white"
+          style="background-color: #23577a; color: white"
         >
           <div class="me-md-4 flex-fill">
             <h4 class="fw-bold mb-2">
@@ -143,15 +166,36 @@
               timetables.
             </p>
             <p class="text-white mb-0">
-              <strong>Technologies:</strong> Java, Spring Boot, REST API
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >Java</span
+              >
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >Spring Boot</span
+              >
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >Angular</span
+              >
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >TypeScript / JavaScript</span
+              >
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >HTML</span
+              >
+              <span class="badge bg-light flowplan-badge me-1 fs-5 py-1 px-2"
+                >CSS</span
+              >
             </p>
           </div>
         </div>
 
-        <a href="https://github.com/cmolina12/flowplan-backend" target="_blank" rel = "noopener noreferrer" class="d-inline-flex align-items-center mt-2 mb-5 github-link">
-        <i class="bi bi-github me-1"></i> View on GitHub
+        <a
+          href="https://github.com/cmolina12/flowplan-backend"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="d-inline-flex align-items-center mt-2 mb-5 github-link"
+        >
+          <i class="bi bi-github me-1"></i> View on GitHub
         </a>
-       
 
         <!-- Obsidian Vault Block -->
         <div
@@ -169,14 +213,52 @@
               workflow automation for knowledge retention and daily planning.
             </p>
             <p class="text-white mb-0">
-              <strong>Technologies:</strong> Obsidian, Markdown, DataviewJS
+              <span class="badge bg-light obsidian-badge me-1 fs-5 py-1 px-2"
+                >Obsidian</span
+              >
+              <span class="badge bg-light obsidian-badge me-1 fs-5 py-1 px-2"
+                >Markdown</span
+              >
+              <span class="badge bg-light obsidian-badge me-1 fs-5 py-1 px-2"
+                >DataviewJS</span
+              >
             </p>
           </div>
         </div>
-        <a href="https://github.com/cmolina12/obsidian-vault" target="_blank" rel = "noopener noreferrer" class="d-inline-flex align-items-center mt-2 mb-5 github-link">
-        <i class="bi bi-github me-1"></i> View on GitHub
+        <a
+          href="https://github.com/cmolina12/obsidian-vault"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="d-inline-flex align-items-center mt-2 mb-5 github-link"
+        >
+          <i class="bi bi-github me-1"></i> View on GitHub
         </a>
       </div>
     </section>
+
+    <footer class="text-center py-4 mt-2">
+      <div>
+        <a
+          href="https://co.linkedin.com/in/camilo-molina-plata-a367ab269"
+          class="me-3 linkedin-link"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/cmolina12"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="me-3 github-link"
+          ><i class="bi bi-github"></i
+        ></a>
+      </div>
+      <div class="small mt-2">&copy; 2025 Camilo Molina</div>
+    </footer>
+
+    <script>
+      // Toggle dark mode on button click
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
   </body>
 </html>
