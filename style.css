@@ -141,9 +141,14 @@ main a:hover {
   transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
-.github-link:hover {
+.github-link:hover{
   color: #ef412d;
   text-decoration: underline;
+}
+
+.github-link .bi-github {
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
 .profile-img-shadow {
@@ -160,6 +165,11 @@ main a:hover {
 
 body nav a {
   color: #212529; /* dark gray */
+  transition: color 0.2s;
+}
+
+body nav a:hover {
+  color: #fff
 }
 
 .bi-github,
@@ -168,10 +178,11 @@ body nav a {
   transition: color 0.2s;
 }
 
-.github-link:hover .bi-github,
-.linkedin-link:hover .bi-linkedin {
+.github-link-footer:hover .bi-github,
+.linkedin-link-footer:hover .bi-linkedin {
   color: #fff; /* white on hover */
 }
+
 
 .dark-toggle-btn {
   color: #212529; /* black in light mode */
@@ -184,7 +195,7 @@ body nav a {
 
 .dark-toggle-btn:hover {
   background: none !important;
-  color: inherit !important;
+  color: inherit !important; /* Inherit color on hover,*/
   border: none !important;
 }
 
