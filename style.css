@@ -256,7 +256,8 @@ body.dark-mode .bi-linkedin {
   color: #f8f9fa; /* light color for icons in dark mode */
 }
 
-body.dark-mode .github-link:hover .bi-github,
-body.dark-mode .linkedin-link:hover .bi-linkedin {
+body.dark-mode .github-link-footer:hover .bi-github,
+body.dark-mode .linkedin-link-footer:hover .bi-linkedin {
   color: rgb(239, 65, 45); /* accent color on hover */
 }
+
