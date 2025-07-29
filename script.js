@@ -3,7 +3,7 @@ const roles = [
 
     'Industrial Engineering',
     'Systems and Computing Engineering',
-    'Full Stack Developer',
+    'Full-Stack Developer',
     'Optimization',
   'Privacy & Digital Autonomy',
 ]
