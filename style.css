@@ -261,3 +261,8 @@ body.dark-mode .linkedin-link-footer:hover .bi-linkedin {
   color: rgb(239, 65, 45); /* accent color on hover */
 }
 
+body.dark-mode .btn-projects {
+  color: #f8f9fa;
+  background-color: transparent;
+  border: 1px solid #f8f9fa;
+}
