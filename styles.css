@@ -40,15 +40,15 @@ body::before {
   position: fixed;
   inset: -30%;
   background: radial-gradient(
-        circle at 30% 30%,
-        rgba(139, 184, 255, 0.08),
-        transparent 40%
-      ),
+      circle at 30% 30%,
+      rgba(139, 184, 255, 0.08),
+      transparent 40%
+    ),
     radial-gradient(
-        circle at 70% 20%,
-        rgba(255, 255, 255, 0.04),
-        transparent 35%
-      );
+      circle at 70% 20%,
+      rgba(255, 255, 255, 0.04),
+      transparent 35%
+    );
   filter: blur(50px);
   opacity: 0.35;
   animation: drift 16s ease-in-out infinite alternate;
@@ -216,8 +216,7 @@ section {
   padding: 0.45rem 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 10px;
-  transition: transform 0.2s ease, border-color 0.2s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease;
 }
 
 .hero-links a:hover,
@@ -326,8 +325,8 @@ p {
   background: rgba(255, 255, 255, 0.02);
   display: grid;
   gap: 0.5rem;
-  transition: transform 0.2s ease, border-color 0.2s ease,
-    box-shadow 0.25s ease, background 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease,
+    background 0.2s ease;
 }
 
 .project-card:hover,
@@ -373,7 +372,7 @@ p {
 }
 
 .project-tech {
-  margin: 0;
+  margin: 1;
   color: var(--muted);
 }
 
@@ -409,8 +408,7 @@ p {
   gap: 0.35rem;
   padding: 0.25rem 0.45rem;
   border-radius: 8px;
-  transition: color 0.2s ease, background-color 0.2s ease,
-    transform 0.18s ease;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.18s ease;
 }
 
 .footer-links a:hover,
