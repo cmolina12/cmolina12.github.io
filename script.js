@@ -1,53 +1,45 @@
-
 const roles = [
-
-    'Industrial Engineering',
-    'Systems and Computing Engineering',
-    'Full-Stack Developer',
-    'Optimization',
-  'Privacy & Digital Autonomy',
-]
+  "Industrial Engineering",
+  "Systems and Computing Engineering",
+  "Full-Stack Developer",
+  "Optimization",
+  "Privacy & Digital Autonomy",
+];
 
 let currentRole = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 100;           // typing speed in ms
-const pause = 1500;          // pause after finishing a word
+const speed = 100; // typing speed in ms
+const pause = 1500; // pause after finishing a word
 
-const target = document.getElementById('typewriter');
+const target = document.getElementById("typewriter");
 
-function type (){
+function type() {
+  const text = roles[currentRole];
 
-    const text = roles[currentRole];
+  if (isDeleting) {
+    charIndex--;
+    target.textContent = text.substring(0, charIndex);
+  } else {
+    charIndex++;
+    target.textContent = text.substring(0, charIndex);
+  }
 
-    if (isDeleting){
-        charIndex--;
-        target.textContent = text.substring(0, charIndex);
-    }
-    else {
-        charIndex++;
-        target.textContent = text.substring(0, charIndex);
-    }
+  // Am I done writing?
 
-    // Am I done writing?
+  if (!isDeleting && charIndex === text.length) {
+    isDeleting = true;
+    setTimeout(type, pause);
+  }
 
-    if (!isDeleting && charIndex === text.length){
-        isDeleting = true;
-        setTimeout(type, pause)
-
-    }
-
-    // Am I done deleting?
-    else if (isDeleting && charIndex === 0){
-        isDeleting = false;
-        currentRole = (currentRole + 1) % roles.length; // Loop through roles
-        setTimeout(type, 300);
-    }
-
-    else {
-        setTimeout(type, isDeleting? 50 : speed);
-    }
-
+  // Am I done deleting?
+  else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    currentRole = (currentRole + 1) % roles.length; // Loop through roles
+    setTimeout(type, 300);
+  } else {
+    setTimeout(type, isDeleting ? 50 : speed);
+  }
 }
 
 type();
