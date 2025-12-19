@@ -16,9 +16,7 @@ body {
     padding: 0;
     background: var(--bg);
     color: var(--text);
-    font-family:
-        "Geist Mono", "IBM Plex Mono", "Menlo", "Consolas", "Inter", system-ui,
-        sans-serif;
+    font-family: "Geist Mono", system-ui, sans-serif;
     line-height: 1.6;
     letter-spacing: 0.01em;
     position: relative;
