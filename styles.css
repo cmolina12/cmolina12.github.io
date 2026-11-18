@@ -311,8 +311,17 @@ p {
 }
 
 .project-name {
+    margin: 0;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.01em;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem;
 }
 
 .project-tag {
