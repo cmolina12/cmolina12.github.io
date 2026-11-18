@@ -23,15 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-@keyframes drift {
-    from {
-        transform: translate3d(0, 0, 0) scale(1);
-    }
-    to {
-        transform: translate3d(-2%, 3%, 0) scale(1.05);
-    }
-}
-
 a {
     color: var(--text);
     text-decoration: none;
@@ -91,61 +82,17 @@ nav a:focus-visible::after {
     transform: scaleX(1);
 }
 
-.contact {
-    font-weight: 600;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.3rem 0.65rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
-    overflow: hidden;
-    transition:
-        border-color 0.18s ease,
-        transform 0.2s ease;
-}
-
-.contact::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at 20% 50%,
-        rgba(139, 184, 255, 0.25),
-        transparent 35%
-    );
-    opacity: 0;
-    transform: translate3d(-10%, 0, 0);
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
-    pointer-events: none;
-}
-
-.contact:hover,
-.contact:focus-visible {
-    border-color: rgba(139, 184, 255, 0.45);
-    transform: translateY(-1px);
-}
-
-.contact:hover::after,
-.contact:focus-visible::after {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
 main {
     padding-top: 0.5rem;
     padding-bottom: 3rem;
 }
 
 section {
-    padding: 3.2rem 0;
+    padding: 2.6rem 0;
 }
 
 #hero {
-    padding: 6rem 0 2.6rem;
+    padding: 5rem 0 2rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -157,8 +104,6 @@ section {
     flex-direction: column;
     gap: 0.7rem;
 }
-
-
 
 .hero-links {
     display: flex;
@@ -201,14 +146,6 @@ p {
     color: var(--text);
 }
 
-.eyebrow {
-    color: var(--muted);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin: 0;
-}
-
 .lede {
     color: var(--muted);
     max-width: 640px;
@@ -229,7 +166,8 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(139, 184, 255, 0.25);
+    color: var(--accent);
     transition:
         border-color 0.18s ease,
         transform 0.18s ease,
@@ -326,10 +264,10 @@ p {
 
 .project-tag {
     padding: 0.2rem 0.55rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(139, 184, 255, 0.25);
     border-radius: 999px;
     font-size: 0.85rem;
-    color: var(--muted);
+    color: var(--accent);
     transition:
         border-color 0.18s ease,
         color 0.18s ease,
@@ -339,7 +277,6 @@ p {
 .project-card:hover .project-tag,
 .project-card:focus-within .project-tag {
     border-color: rgba(139, 184, 255, 0.55);
-    color: var(--text);
     background-color: rgba(139, 184, 255, 0.08);
 }
 
@@ -349,7 +286,6 @@ p {
 }
 
 .project-tech {
-    margin: 1;
     color: var(--muted);
 }
 
